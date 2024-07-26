@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const Motivational = () => {
   return (
     <div>
-      With great power comes great electricity bill
+      <Image src="/motivacional.svg" alt="motivational" width={712} height={158} className="-z-10"/>
     </div>
   )
 }

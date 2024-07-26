@@ -78,7 +78,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-16 left-0 w-full h-full bg-[#23262B] flex flex-col items-start gap-8 md:hidden pt-11"
+            className="absolute top-16 left-0 w-full h-full bg-[#282C33] flex flex-col items-start gap-8 md:hidden pt-11"
           >
             {Links.map((link) => (
               <Link key={link.name} href={link.path} className="flex items-center justify-center font-medium text-4xl pl-2 ">
