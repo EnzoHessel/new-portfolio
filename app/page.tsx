@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroContent from "@/components/HeroContent";
 import Motivational from "@/components/Motivational";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
       </div>
       <div className="pt-28">
         <Motivational />
+      </div>
+      <div className="pt-28 w-full">
+        <Projects />
       </div>
     </main>
   );
