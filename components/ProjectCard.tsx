@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ image, tecnologies, title, description, cached, link, github } : ProjectCardProps ) => {
   return (
-    <div className="border border-[#ABB2BF]">
+    <div className="border border-[#ABB2BF] rounded-lg">
       <div className="relative w-full h-[210px]">
         <Image src={image} alt={title} fill className="object-fill"/>
       </div>

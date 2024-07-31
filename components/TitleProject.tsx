@@ -1,4 +1,5 @@
 import { Hash } from "lucide-react";
+import Link from "next/link";
 
 const ProjectTitle = () => {
   return (
@@ -11,7 +12,7 @@ const ProjectTitle = () => {
         <div className="w-[400px] h-px bg-[#C778DD] hidden md:block" />
       </div>
       <div className="flex items-center justify-center">
-        <p className="lg:text-base text-xs mt-1">View all ~~&gt;</p>
+        <Link href={"/projects"} className="lg:text-base text-xs mt-1 cursor-pointer" >View all ~~&gt;</Link>
       </div>
     </div>
   )
