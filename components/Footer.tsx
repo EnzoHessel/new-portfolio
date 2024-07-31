@@ -20,7 +20,7 @@ const Footer = () => {
             className="flex flex-col gap-4"
             initial={{ opacity: 0, y: -20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
           >
             <div className="flex gap-2 items-center cursor-pointer">
               <Image src="/logo.svg" alt="logo" width={16} height={16} />
@@ -32,7 +32,7 @@ const Footer = () => {
             className="flex flex-col gap-3"
             initial={{ opacity: 0, y: -20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 1, delay: 0.3 }}
           >
             <p className="text-2xl">Media</p>
             <div className="flex gap-4 cursor-pointer">
@@ -49,7 +49,7 @@ const Footer = () => {
           className="py-12"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 1, delay: 0.6 }}
         >
           <p className="text-[#ABB2BF] text-base">© Copyright 2024. Made by Enzo </p>
         </motion.div>

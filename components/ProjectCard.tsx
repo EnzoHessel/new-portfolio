@@ -16,7 +16,7 @@ const ProjectCard = ({ image, tecnologies, title, description, cached, link, git
   return (
     <div className="border border-[#ABB2BF] rounded-lg">
       <div className="relative w-full h-[210px]">
-        <Image src={image} alt={title} fill className="object-fill"/>
+        <Image src={image} alt={title} fill className="object-contain" loading="lazy"/>
       </div>
       <div className="border-y border-[#ABB2BF] p-2">
         <span className="text-base text-[#ABB2BF]">{tecnologies}</span>

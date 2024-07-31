@@ -19,7 +19,7 @@ const Contacts = () => {
             className="flex items-center justify-start"
             initial={{ opacity: 0, y: -20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
           >
             <Hash size={30} color="#C778DD" />
             <h2 className="text-3xl">contacts</h2>
@@ -28,7 +28,7 @@ const Contacts = () => {
             className="w-full md:w-[127px] h-px bg-[#C778DD] hidden md:block"
             initial={{ width: 0 }}
             animate={inView ? { width: "100%" } : {}}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 1, delay: 0.5 }}
           />
         </div>
       </div>
@@ -37,7 +37,7 @@ const Contacts = () => {
           className='pt-11 text-[#ABB2BF] max-w-[515px]'
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.7 }}
+          transition={{ duration: 1, delay: 0.7 }}
         >
           <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
         </motion.div>
@@ -45,7 +45,7 @@ const Contacts = () => {
           className='flex justify-center items-center gap-2 p-2 border border-[#ABB2BF] w-72 h-fit text-[#ABB2BF] hover:text-white duration-200 rounded-lg'
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.9 }}
+          transition={{ duration: 1, delay: 0.9 }}
         >
           <Mail size={32} />
           <a href="mailto:enzohessel12342@gmail.com">enzohessel12342@gmail.com</a>

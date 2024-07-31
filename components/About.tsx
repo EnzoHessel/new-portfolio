@@ -22,7 +22,7 @@ const About = () => {
               className="flex items-center justify-start"
               initial={{ opacity: 0, y: -20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1 }}
             >
               <Hash size={30} color="#C778DD" />
               <h2 className="text-3xl whitespace-nowrap">about-me</h2>
@@ -31,7 +31,7 @@ const About = () => {
               className="w-full md:w-[326px] h-px bg-[#C778DD] hidden md:block"
               initial={{ width: 0 }}
               animate={inView ? { width: "100%" } : {}}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 1, delay: 0.5 }}
             />
           </div>
         </div>
@@ -39,21 +39,21 @@ const About = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.7 }}
+            transition={{ duration: 1, delay: 0.7 }}
           >
             Hello, i'm Elias!
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.9 }}
+            transition={{ duration: 1, delay: 0.9 }}
           >
             I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 1.1 }}
+            transition={{ duration: 1, delay: 1.1 }}
           >
             Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
           </motion.p>
@@ -61,7 +61,7 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 1.3 }}
+          transition={{ duration: 1, delay: 1.3 }}
         >
           <Button variant={"default"} className="mt-9">Read more -&gt;</Button>
         </motion.div>
@@ -69,7 +69,7 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.5, delay: 1.5 }}
+        transition={{ duration: 1, delay: 1.5 }}
       >
         <Image src="/aboutImage.svg" alt="about" width={343} height={508} className="md:block hidden" />
       </motion.div>

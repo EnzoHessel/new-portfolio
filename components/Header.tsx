@@ -27,7 +27,7 @@ const Header = () => {
           className="flex gap-2 items-center cursor-pointer"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 1 }}
         >
           <Image src="/logo.svg" alt="logo" width={16} height={16} />
           <p className="font-bold text-base">Enzo</p>
@@ -45,7 +45,7 @@ const Header = () => {
                 className="flex items-center"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.1 * Links.indexOf(link) }}
+                transition={{ duration: 1, delay: 0.1 * Links.indexOf(link) }}
               >
                 <Hash size={16} color="#C778DD" />
                 <span className="hover:text-white text-[#ABB2BF]">{link.name}</span>
@@ -62,7 +62,7 @@ const Header = () => {
                   initial={{ opacity: 0, rotate: -90 }}
                   animate={{ opacity: 1, rotate: 0 }}
                   exit={{ opacity: 0, rotate: 90 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 1 }}
                   className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
@@ -77,7 +77,7 @@ const Header = () => {
                   initial={{ opacity: 0, rotate: 90 }}
                   animate={{ opacity: 1, rotate: 0 }}
                   exit={{ opacity: 0, rotate: -90 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 1 }}
                   className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
@@ -96,7 +96,7 @@ const Header = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 1 }}
               className="absolute top-16 left-0 w-full h-full bg-[#282C33] flex flex-col items-start gap-8 md:hidden pt-11"
             >
               {Links.map((link) => (
