@@ -1,6 +1,6 @@
 "use client"
 
-import { Hash, Mail } from 'lucide-react';
+import { Github, Hash, Linkedin, Mail } from 'lucide-react';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -32,23 +32,33 @@ const Contacts = () => {
           />
         </div>
       </div>
-      <div className='md:flex block justify-between items-center space-y-9'>
+      <div className='md:flex block justify-between items-start space-y-9'>
         <motion.div
           className='pt-11 text-[#ABB2BF] max-w-[515px]'
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.7 }}
         >
-          <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+          <p>Estou interessado em vagas CLT e freelance. Se precisar de alguma coisa ou tiver alguma dúvida, me avise!</p>
         </motion.div>
         <motion.div
-          className='flex justify-center items-center gap-2 p-2 border border-[#ABB2BF] w-72 h-fit text-[#ABB2BF] hover:text-white duration-200 rounded-lg'
+          className='flex flex-col justify-start items-start gap-2 p-4 border border-[#ABB2BF] w-auto h-auto rounded-lg'
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.9 }}
         >
-          <Mail size={32} />
-          <a href="mailto:enzohessel12342@gmail.com">enzohessel12342@gmail.com</a>
+          <div className="flex justify-start items-center gap-2 text-[#ABB2BF] hover:text-white duration-200 ">
+            <Mail size={32} />
+            <a href="mailto:enzohessel12342@gmail.com" target='_blank'>enzohessel12342@gmail.com</a>
+          </div>
+          <div className="flex justify-start items-center gap-2 text-[#ABB2BF] hover:text-white duration-200 ">
+            <Linkedin size={32} />
+            <a href="https://www.linkedin.com/in/enzo-hessel/" target='_blank'>Linkedn</a>
+          </div>
+          <div className="flex justify-start items-center gap-2 text-[#ABB2BF] hover:text-white duration-200 ">
+            <Github size={32} />
+            <a href="https://github.com/EnzoHessel" target='_blank'>EnzoHessel</a>
+          </div>
         </motion.div>
       </div>
     </div>

@@ -8,7 +8,7 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full max-w-[1024px] flex-col items-center mx-auto p-4 sm:p-6 md:p-8 lg:p-10 bg-[#282C33]">
-      <section className="pt-8 md:pt-0" id="home">
+      <section className="pt-3 md:pt-0" id="home">
         <HeroContent/>
       </section>
       {/* <div className="pt-28">

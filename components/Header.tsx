@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,16 +22,18 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex w-full max-w-[1024px] flex-col items-center mx-auto px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:pt-10 lg:px-10 bg-[#282C33]">
-      <div className="flex justify-between w-full">
+  <header className="flex w-full max-w-[1024px] flex-col items-center mx-auto px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:pt-10 lg:px-10 bg-[#282C33] z-50">
+      <div className="flex justify-between w-full ">
         <motion.div
-          className="flex gap-2 items-center cursor-pointer"
+          className=""
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <Image src="/logo.svg" alt="logo" width={16} height={16} />
-          <p className="font-bold text-base">Enzo</p>
+          <Link href="/" className="flex gap-2 items-center cursor-pointer">
+            <Image src="/logo.svg" alt="logo" width={16} height={16} />
+            <p className="font-bold text-base">Enzo</p>
+          </Link>
         </motion.div>
         <div className="hidden md:flex gap-8">
           {Links.map((link) => (
@@ -62,7 +65,7 @@ const Header = () => {
                   initial={{ opacity: 0, rotate: -90 }}
                   animate={{ opacity: 1, rotate: 0 }}
                   exit={{ opacity: 0, rotate: 90 }}
-                  transition={{ duration: 1 }}
+                  transition={{ duration: 0.3 }}
                   className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
@@ -77,7 +80,7 @@ const Header = () => {
                   initial={{ opacity: 0, rotate: 90 }}
                   animate={{ opacity: 1, rotate: 0 }}
                   exit={{ opacity: 0, rotate: -90 }}
-                  transition={{ duration: 1 }}
+                  transition={{ duration: 0.3 }}
                   className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
@@ -96,8 +99,8 @@ const Header = () => {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="absolute top-16 left-0 w-full h-full bg-[#282C33] flex flex-col items-start gap-8 md:hidden pt-11"
+              transition={{ duration: 0.3 }}
+              className="absolute top-16 left-0 w-full h-full bg-[#282C33] flex flex-col items-start gap-8 md:hidden pt-11 z-50"
             >
               {Links.map((link) => (
                 <ScrollLink
@@ -116,7 +119,7 @@ const Header = () => {
           )}
         </AnimatePresence>
       </div>
-    </div>
+    </header>
   );
 };
 

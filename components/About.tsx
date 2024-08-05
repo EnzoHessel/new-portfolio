@@ -41,30 +41,37 @@ const About = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.7 }}
           >
-            Hello, i'm Elias!
+            Oi, eu sou o Enzo!
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.9 }}
           >
-            I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
+           Sou um desenvolvedor full-stack de São Paulo e adoro criar sites responsivos do zero, transformando-os em experiências web modernas e fáceis de usar.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 1.1 }}
           >
-            Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
+          Há mais de um ano, venho criando sites e ajudando clientes a se destacarem online. Recentemente, participei do projeto Invest+ Bradesco, onde pude aplicar minhas habilidades e aprender muito.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 1.1 }}
+          >
+            Estou sempre de olho nas novas tecnologias e frameworks para continuar evoluindo. Atualmente, também estou explorando o desenvolvimento back-end com Java.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 1.1 }}
+          >
+            Se você precisa de ajuda para criar ou melhorar seu site, adoraria conversar e ver como posso contribuir.
           </motion.p>
         </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, delay: 1.3 }}
-        >
-          <Button variant={"default"} className="mt-9">Read more -&gt;</Button>
-        </motion.div>
       </div>
       <motion.div
         initial={{ opacity: 0, x: 20 }}
