@@ -69,7 +69,7 @@ const About = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 1.1 }}
           >
-            Se você precisa de ajuda para criar ou melhorar seu site, adoraria conversar e ver como posso contribuir.
+            Se você precisa de ajuda para criar ou melhorar seu site, adoraria participar do seu projeto ou de sua equipe.
           </motion.p>
         </div>
       </div>
