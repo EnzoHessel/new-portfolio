@@ -5,7 +5,7 @@ interface SkillsCardProps {
 
 const SkillsCard = ({ title, skills }: SkillsCardProps) => {
   return (
-    <div className="w-[178px] border border-[#ABB2BF]">
+    <div className="md:w-full lg:w-[178px] border border-[#ABB2BF]">
       <div className="p-2 border-b border-[#ABB2BF]">
         <h2>{title}</h2>
       </div>
